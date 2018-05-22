@@ -122,8 +122,7 @@ describe('ReportRenderer', () => {
       const output = renderer.renderReport(sampleResults, container);
 
       const warningEls = output.querySelectorAll('.lh-run-warnings > ul > li');
-      assert.strictEqual(warningEls.length, 1);
-      assert.ok(/Links.*unsafe/.test(warningEls[0].textContent), 'did not add warning text');
+      assert.strictEqual(warningEls.length, sampleResults.runWarnings.length);
     });
 
     it('renders a footer', () => {

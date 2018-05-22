@@ -584,14 +584,26 @@
   margin-top: 0;
 }
 
+.lh-audit__title .lh-debug {
+  margin-top: 3px;
+}
 
 .lh-debug {
   font-size: var(--caption-font-size);
   line-height: var(--caption-line-height);
-  color: var(--fail-color);
   margin-bottom: 3px;
 }
 
+.lh-debug--explanation {
+  color: var(--fail-color);
+
+}
+.lh-debug--warnings {
+  color: var(--average-color);
+}
+.lh-debug--warnings ul {
+  margin: 0;
+}
 
 /* Report */
 
